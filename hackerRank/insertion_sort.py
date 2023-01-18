@@ -1,12 +1,11 @@
-def insertion(lis):
-    for i in range(1,len(lis)):
-        n=lis[i]
+def insertion(arr):
+    for i in range(1,len(arr)):
+        nn=arr[i]
         j=i-1
-        while j>=0 and n< lis[j]:
-            lis[j+1]=lis[j]
+        while j>=0 and nn< arr[j]:
+            arr[j+1]=arr[j]
             j=j-1
-            print(lis)
-        lis[j+1]=n  
-    print(lis)      
+            print(*arr)
+        arr[j+1]=nn 
+    print(*arr)    
 
-insertion([2,4,6,8,3])
