@@ -16,4 +16,4 @@ if __name__ == '__main__':
         elif co[0] == "pop":
             li.pop()
         elif co[0] == "reverse":
-            li.sort(reverse=True)
+            li = li[::-1]
